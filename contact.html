@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Euphoria'25</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Contact & FAQs</h1>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="events.html">Events</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="register.html">Register</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav></header>
+
+<section>
+  <h2 style="text-decoration: underline;">Contact Us</h2>
+  <p>Email: euphoria'25@thapar.edu</p>
+  <p>Phone: +91 82840 59737</p>
+  <p>Follow us on <a href="#">Instagram</a>, <a href="#">Facebook</a></p>
+</section>
+
+<section class="faq-section">
+  <h2>FAQs ❓</h2>
+
+  <div class="faq">
+    <button class="faq-question">Who can participate? <span>+</span></button>
+    <div class="faq-answer">
+      <p>Any college student with a valid ID can participate in the events.</p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="faq-question">How to register? <span>+</span></button>
+    <div class="faq-answer">
+      <p>You can register using our <a href="register.html">online registration form</a>.</p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <button class="faq-question">Is there an entry fee? <span>+</span></button>
+    <div class="faq-answer">
+      <p>Some events are free, while others may have a small fee to cover costs.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const faq = document.querySelectorAll(".faq");
+  faqs.forEach(faq => {
+    faq.querySelector(".faq-question").addEventListener("click", () => {
+      faq.classList.toggle("active");
+    });
+  });
+</script>
+
+<script>
+  const faqs = document.querySelectorAll(".faq");
+
+  faqs.forEach(faq => {
+    faq.querySelector(".faq-question").addEventListener("click", () => {
+      faq.classList.toggle("active");
+    });
+  });
+</script>
+
+</body>
+</html>
